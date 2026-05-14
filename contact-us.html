@@ -173,15 +173,9 @@ and is wrapped around the whole page content, except for the footer in this exam
 <!-- End Gallery Links Sidebar -->
 
 
-
-
-  
-  
-
   <hr> 
  
- 
-</div>
+ </div>
 
 <!-- END GRID -->
 </div><br>
@@ -193,6 +187,36 @@ and is wrapped around the whole page content, except for the footer in this exam
 <footer class="w3-container w3-dark-grey w3-padding-32 w3-margin-top">
 
 </footer>
+
+<!-- This is the popup cookies Start-->
+<div id="cookie-popup" class="cookie-popup">
+    <div class="cookie-content">
+        <p>We use cookies!</p>
+        <button id="accept-cookies">Got it!</button>
+    </div>
+</div>
+<!-- This is the popup cookies End-->
+
+
+<!-- Start cookie java-->
+<script type='text/javascript'>
+// Function to check if cookies have already been accepted
+window.onload = function() {
+    if (!localStorage.getItem('cookiesAccepted')) {
+        document.getElementById('cookie-popup').style.display = 'flex';
+    }
+
+    // Handle cookie acceptance
+    document.getElementById('accept-cookies').addEventListener('click', function() {
+        localStorage.setItem('cookiesAccepted', 'true');
+        document.getElementById('cookie-popup').style.display = 'none';
+    });
+};
+
+</script>
+
+<!-- End cookie java-->
+
 
 </body>
 </html>
