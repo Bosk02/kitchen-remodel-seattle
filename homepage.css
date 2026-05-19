@@ -348,36 +348,3 @@ nav a:hover {
 
 
 
-/* Start cookies info */
-.cookie-popup {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background-color:turquoise;
-    color: white;
-    display: none;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    z-index: 1000;
-}
-.cookie-content {
-    background-color: black;
-    padding: 20px;
-    border-radius: 5px;
-    text-align: center;
-}
-#accept-cookies {
-    background-color: pink;
-    color: purple;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-#accept-cookies:hover {
-    background-color: blue;
-    color:white;
-}
-/* End cookies info */
