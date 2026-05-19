@@ -292,32 +292,25 @@ function w3_close() {
 
 
 
-<!-- This is the popup cookies Start-->
-<div id="cookie-popup" class="cookie-popup">
-    <div class="cookie-content">
-        <p>We use cookies!</p>
-        <button id="accept-cookies">Got it!</button>
-    </div>
-</div>
-<!-- This is the popup cookies End-->
-
-
-<!-- Start cookie java-->
-<script type='text/javascript'>
-// Function to check if cookies have already been accepted
-window.onload = function() {
-    if (!localStorage.getItem('cookiesAccepted')) {
-        document.getElementById('cookie-popup').style.display = 'flex';
-    }
-
-    // Handle cookie acceptance
-    document.getElementById('accept-cookies').addEventListener('click', function() {
-        localStorage.setItem('cookiesAccepted', 'true');
-        document.getElementById('cookie-popup').style.display = 'none';
-    });
-};
-
+<!-- Cookie Consent by TermsFeed https://www.TermsFeed.com -->
+<script type="text/javascript" src="https://www.termsfeed.com/public/cookie-consent/4.2.0/cookie-consent.js" charset="UTF-8"></script>
+<script type="text/javascript" charset="UTF-8">
+document.addEventListener('DOMContentLoaded', function () {
+cookieconsent.run({"notice_banner_type":"simple","consent_type":"express","palette":"dark","language":"en","page_load_consent_levels":["strictly-necessary"],"notice_banner_reject_button_hide":false,"preferences_center_close_button_hide":false,"page_refresh_confirmation_buttons":false,"website_name":"https://www.kitchenremodelseattle.com/","website_privacy_policy_url":"https://www.kitchenremodelseattle.com/privacypolicy.html"});
+});
 </script>
+
+<noscript>Free cookie consent management tool by <a href="https://www.termsfeed.com/">TermsFeed Generator</a></noscript>
+<!-- End Cookie Consent by TermsFeed https://www.TermsFeed.com -->
+
+
+
+
+
+<!-- Below is the link that users can use to open Preferences Center to change their preferences. Do not modify the ID parameter. Place it where appropriate, style it as needed. -->
+
+<a href="#" id="open_preferences_center">Update cookies preferences</a>
+
 
 <!-- End cookie java-->
 
